@@ -95,6 +95,7 @@ begin
         FMenuItem := TMenuItem.Create(mmiViewMenu);
         FMenuItem.Caption := '&Auto Save Options...';
         FMenuItem.OnClick := MenuClick;
+        FMenuItem.ShortCut:= TextToShortCut('Ctrl+Shift+Alt+A');
         mmiViewMenu.Insert(mmiFirstDivider.MenuIndex, FMenuItem);
       end;
     end;
